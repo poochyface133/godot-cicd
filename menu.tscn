@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://b5dt6vt7g17nw"]
+
+[ext_resource type="Script" uid="uid://drwwun1unosd8" path="res://start.gd" id="1_lti8b"]
+[ext_resource type="Script" uid="uid://bl55elo52ffkc" path="res://quit.gd" id="2_ouk20"]
+
+[node name="Menu" type="Node2D" unique_id=67795430]
+
+[node name="START" type="Button" parent="." unique_id=41823524]
+offset_left = 472.0
+offset_top = 184.0
+offset_right = 744.0
+offset_bottom = 294.0
+text = "START"
+script = ExtResource("1_lti8b")
+
+[node name="QUIT" type="Button" parent="." unique_id=706208470]
+offset_left = 472.0
+offset_top = 344.0
+offset_right = 744.0
+offset_bottom = 454.0
+text = "QUIT"
+script = ExtResource("2_ouk20")
+
+[connection signal="pressed" from="START" to="START" method="_on_pressed"]
+[connection signal="pressed" from="QUIT" to="QUIT" method="_on_pressed"]
